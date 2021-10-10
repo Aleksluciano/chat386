@@ -4,6 +4,7 @@ import (
 	"github.com/Aleksluciano/chat386/internal/handlers"
 	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -15,6 +16,6 @@ func main() {
 
 	log.Println("Starting web server on port ??")
 
-	_ = http.ListenAndServe("", mux)
+	_ = http.ListenAndServe(":" + os.Getenv("PORT"), mux)
 
 }
