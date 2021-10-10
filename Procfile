@@ -1,1 +1,1 @@
-web:ws
+web: ./web
