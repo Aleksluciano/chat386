@@ -1,1 +1,1 @@
-"web: chat386" 
+"web: web" 
