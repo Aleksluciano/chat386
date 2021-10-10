@@ -1,1 +1,1 @@
-./bin/web
+web: ./bin/web
