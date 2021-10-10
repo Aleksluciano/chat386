@@ -82,8 +82,8 @@
 
 
     document.addEventListener("DOMContentLoaded", function () {
+        //socket = new ReconnectingWebSocket("ws://127.0.0.1:3000/ws", null, {debug: true, recconecInterval:3000});
         socket = new ReconnectingWebSocket("wss://chat386.herokuapp.com/ws", null, {debug: true, recconecInterval:3000});
-
         const offline =  `<span class="badge bg-danger">Not connected`;
         const online = `<span class="badge bg-success">Connected`;
 
